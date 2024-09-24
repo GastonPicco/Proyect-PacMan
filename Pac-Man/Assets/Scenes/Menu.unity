@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1644,7 +1644,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.41960785}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0.45490196}
     m_PressedColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.78039217}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.41960785}
@@ -9002,11 +9002,15 @@ MonoBehaviour:
   playerStuck: 0
   eatMode: 0
   eatModeTimer: 0
+  Score: 0
+  lifes: 0
   Die: 0
   Return1: 0
   Return2: 0
   Return3: 0
   Return4: 0
+  pause: 0
+  win: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -10506,7 +10510,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.41960785}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0.45490196}
     m_PressedColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.78039217}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.41960785}
@@ -13571,7 +13575,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.41960785}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0.45490196}
     m_PressedColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.78039217}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.41960785}
@@ -21329,7 +21333,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.41960785}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0.45490196}
     m_PressedColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.78039217}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.41960785}
@@ -22753,7 +22757,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.41960785}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0.45490196}
     m_PressedColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.78039217}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.41960785}
@@ -32459,7 +32463,7 @@ MonoBehaviour:
   wall:
     serializedVersion: 2
     m_Bits: 64
-  cantGetKey: 1
+  canGetKey: 0
 --- !u!135 &1362132929
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32824,7 +32828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -40639,6 +40643,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PanelJugar: {fileID: 60789848}
   PanelNiveles: {fileID: 1377629649}
+  PanelPausa: {fileID: 0}
+  ButtonVolver: {fileID: 0}
+  needScore: 0
+  lifes: 0
+  InGame: 0
+  life1Image: {fileID: 0}
+  life2Image: {fileID: 0}
+  life3Image: {fileID: 0}
+  ScoreText: {fileID: 0}
+  Score2: {fileID: 0}
+  ScoreText2: {fileID: 0}
 --- !u!1001 &1708702102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43614,7 +43629,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 0.41960785}
+    m_NormalColor: {r: 0, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0.45490196}
     m_PressedColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0.78039217}
     m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.41960785}
